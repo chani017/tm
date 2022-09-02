@@ -1,0 +1,89 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+body{
+    background-color: #D65746;
+    overflow: hidden;
+    font-family: "Pretendard";
+}
+
+.logo{
+    height: 100px;
+    margin-top: 4%;
+    margin-left: 35%;
+}
+
+.title{
+    display: inline-block;
+    color: white;
+    font-weight: 800;
+    margin-left: 2%;
+    font-family: "Pretendard";
+}
+
+.title > h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.title > h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -10%;
+}
+
+.board{
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 4%); 
+    width: 800px;
+    height: 1000px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 42px;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+}
+
+input {
+      display: none;}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    width: 26.7%;
+}
+
+label:hover {
+    color: #D65746;
+    cursor: pointer;
+}
+
+input:checked + label {
+    color: #D65746;
+    border-bottom: 2px solid #D65746;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+    display: block;
+}
+
+.bus, .cafe_stud, .cafe_prof {
+    margin: 20px;
+    width: 95%;
+    height: auto;
+}

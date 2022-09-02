@@ -1,31 +1,47 @@
-{% load static %}
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>타고먹고</title>
-    <!--  타이틀에 로고 이미지 삽입  -->
-    <link href="{% static 'img/Tago_Muckgo_logo.png' %}" rel="shortcut icon" type="image/x-icon">
-
-    <!--  BOOTSTRAP LINK  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-    <!--  GOOGLE FONTS LINK  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-    <!--  DEFAULT CSS LINK  -->
-    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
-
-    <style>
-    @font-face {
-    font-family: 'ONE-Mobile-POP';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
-    </style>
-
-
+    <link rel="stylesheet" href="/templates/head.css">
 </head>
+<body>
+    <div class="head">
+        <img class="logo" src="/img/TM_logo.png">
+        <div class="title">
+            <h1>타고먹고</h1>
+            <h2>고려대학교 세종캠퍼스<br>버스시간표 & 학식 식단표 알림 웹서비스</h2>
+        </div>
+    </div>
+    <div class="board">
+        <div class="tab">
+            <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1">버스 시간표</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2">학식 식단표</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3">교직원 식단표</label>
+
+                <section id="content1">
+                    <p>
+                        <img class="bus" src="/img/bus.jpeg">
+                    </p>
+                </section>
+                <section id="content2">
+                    <p>
+                        <img class="cafe_stud" src="/img/cafeteria_stud.jpeg">
+                    </p>
+                </section>
+                <section id="content3">
+                    <p>
+                        <img class="cafe_prof" src="/img/cafeteria_prof.jpeg">
+                    </p>
+                </section>
+        </div>
+    </div>
+</body>
+</html>
